@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Minha Loja</title>
+</head>
+<body>
+
+    <nav>
+        <p><a href="index.html">Início</a> | <a href="disciplina.html">Ir para Página da Disciplina</a></p>
+    </nav>
+
+    <header>
+        <h1>Produtos</h1>
+        <p>Catálogo de informática e periféricos.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Produtos disponíveis</h2>
+
+            <div>
+                <img src="img/notebook.jpg" alt="Notebook Dell Inspiron" width="220">
+                <h3>Notebook Dell Inspiron 15</h3>
+                <p>Processador Intel Core i5, 8GB de memória RAM e SSD de 256GB.</p>
+                <p>R$ 3.199,00</p>
+                <p><a href="#">Ver detalhes</a></p>
+            </div>
+
+            <hr>
+
+            <div>
+                <img src="img/mouse.jpg" alt="Mouse sem fio Logitech" width="220">
+                <h3>Mouse Sem Fio Logitech M170</h3>
+                <p>Conexão sem fio 2.4 GHz, sensor óptico de 1000 DPI e autonomia de até 12 meses de pilha.</p>
+                <p>R$ 69,90</p>
+                <p><a href="#">Ver detalhes</a></p>
+            </div>
+
+            <hr>
+
+            <div>
+                <img src="img/teclado.jpg" alt="Teclado mecânico Redragon" width="220">
+                <h3>Teclado Mecânico Redragon Kumara</h3>
+                <p>Padrão ABNT2, switches mecânicos Outemu Blue e iluminação LED vermelha.</p>
+                <p>R$ 219,00</p>
+                <p><a href="#">Ver detalhes</a></p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Cadastrar produto</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="nome">Nome do produto:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: Monitor 24 Polegadas" required>
+                </p>
+                <p>
+                    <label for="preco">Preço (R$):</label><br>
+                    <input type="number" id="preco" name="preco" step="0.01" placeholder="Ex: 850.00" required>
+                </p>
+                <p>
+                    <label for="foto">Foto do produto (URL ou caminho):</label><br>
+                    <input type="text" id="foto" name="foto" placeholder="img/produto.jpg" required>
+                </p>
+                <p>
+                    <label for="descricao">Descrição do produto:</label><br>
+                    <textarea id="descricao" name="descricao" rows="4" cols="40" placeholder="Digite as especificações do produto"></textarea>
+                </p>
+                <p>
+                    <button type="submit">Cadastrar Novo Produto</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Minha loja</p>
+    </footer>
+
+</body>
+</html>

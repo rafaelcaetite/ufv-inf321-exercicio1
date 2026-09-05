@@ -3,31 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 1 - HTML | INF 321</title>
+    <title>Exercício 1 - INF 321 (UFV)</title>
 </head>
 <body>
 
-    <header>
-        <img src="img/ufv-logo.png" alt="Logo UFV" width="160">
-        <h1>Exercício 1 &mdash; Atividades Práticas de HTML</h1>
-        <p>INF 321 - Projeto e Desenvolvimento de Sistemas para a Web (UFV)</p>
-        <p>Professor: Lucas Vegi | Aluno: Rafael Caetité</p>
+    <nav>
+        <p>
+            <strong>Navegação:</strong> 
+            <a href="#disciplina">Página da Disciplina</a> | 
+            <a href="#produtos">Página de Produtos</a> |
+            <a href="disciplina.html">Ver Disciplina Separada</a> |
+            <a href="produtos.html">Ver Produtos Separados</a>
+        </p>
+    </nav>
+
+    <hr>
+
+    <header id="disciplina">
+        <img src="img/ufv-logo.png" alt="Logo da Universidade Federal de Viçosa" width="180">
+        <h1>INF 321 - Projeto e Desenvolvimento de Sistemas para a Web</h1>
+        <p>Departamento de Informática - Universidade Federal de Viçosa (UFV)</p>
     </header>
 
     <main>
         <section>
-            <h2>Páginas Desenvolvidas</h2>
-            <p>Selecione uma das páginas abaixo para visualizar o resultado:</p>
+            <h2>Sobre a disciplina</h2>
+            <p>A disciplina aborda o desenvolvimento de aplicações web completas, cobrindo tanto o ecossistema front-end (HTML5, CSS3 e JavaScript) quanto a arquitetura e comunicação com sistemas back-end.</p>
+            <p><strong>Professor:</strong> Lucas Vegi</p>
+            <p><strong>Departamento:</strong> Departamento de Informática (DPI / CCE)</p>
+        </section>
+
+        <section>
+            <h2>Tópicos estudados</h2>
+            <p>Principais conteúdos abordados ao longo do semestre:</p>
+            <img src="img/web.jpg" alt="Tela com código e desenvolvimento web" width="300">
             <ul>
-                <li><a href="disciplina.html"><strong>Parte 1: Página de uma disciplina da UFV</strong></a></li>
-                <li><a href="produtos.html"><strong>Parte 2: Página de produtos</strong></a></li>
+                <li>Arquitetura da Web e protocolo HTTP</li>
+                <li>Estrutura semântica de páginas com HTML5</li>
+                <li>Estilização e layouts com CSS3 (Flexbox e Grid)</li>
+                <li>Design responsivo e acessibilidade</li>
+                <li>Programação client-side com JavaScript</li>
+                <li>Consumo de APIs e comunicação assíncrona</li>
+                <li>Introdução a frameworks e desenvolvimento back-end</li>
             </ul>
+        </section>
+
+        <section>
+            <h2>Horários das aulas</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                        <th>Tipo</th>
+                        <th>Local</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>14:00 - 16:00</td>
+                        <td>Teórica</td>
+                        <td>PVA - Sala 105</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta-feira</td>
+                        <td>14:00 - 16:00</td>
+                        <td>Prática</td>
+                        <td>Laboratório do DPI</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta-feira</td>
+                        <td>16:00 - 18:00</td>
+                        <td>Atendimento / Dúvidas</td>
+                        <td>Gabinete do professor (DPI)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Links úteis</h2>
+            <p>Material de apoio e portais acadêmicos:</p>
+            <ol>
+                <li><a href="https://pvanet.ufv.br/" target="_blank">PVANet UFV</a></li>
+                <li><a href="https://www.dpi.ufv.br/" target="_blank">Site do Departamento de Informática</a></li>
+                <li><a href="https://www.ufv.br/" target="_blank">Portal da UFV</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN Web Docs - Guia HTML</a></li>
+                <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools - Tutorial HTML</a></li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Contato</h2>
+            <p>Envie sua dúvida ou mensagem para o professor:</p>
+            <form action="#" method="post">
+                <p>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </p>
+                <p>
+                    <label for="matricula">Matrícula:</label><br>
+                    <input type="text" id="matricula" name="matricula" placeholder="Ex: 105000" required>
+                </p>
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="seu.email@ufv.br" required>
+                </p>
+                <p>
+                    <label for="assunto">Assunto:</label><br>
+                    <input type="text" id="assunto" name="assunto" placeholder="Ex: Dúvida no exercício de HTML" required>
+                </p>
+                <p>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="5" cols="45" placeholder="Digite sua mensagem aqui..." required></textarea>
+                </p>
+                <p>
+                    <button type="submit">Enviar mensagem</button>
+                </p>
+            </form>
         </section>
     </main>
 
     <footer>
         <hr>
-        <p>Universidade Federal de Viçosa - Departamento de Informática (2026/2)</p>
+        <p>INF 321 - Projeto e Desenvolvimento de Sistemas para a Web | Universidade Federal de Viçosa</p>
+    </footer>
+
+    <br><br>
+    <hr>
+    <br>
+
+    <header id="produtos">
+        <h1>Produtos</h1>
+        <p>Catálogo de informática e periféricos.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Produtos disponíveis</h2>
+
+            <div>
+                <img src="img/notebook.jpg" alt="Notebook Dell Inspiron" width="220">
+                <h3>Notebook Dell Inspiron 15</h3>
+                <p>Processador Intel Core i5, 8GB de memória RAM e SSD de 256GB.</p>
+                <p>R$ 3.199,00</p>
+                <p><a href="#">Ver detalhes</a></p>
+            </div>
+
+            <hr>
+
+            <div>
+                <img src="img/mouse.jpg" alt="Mouse sem fio Logitech" width="220">
+                <h3>Mouse Sem Fio Logitech M170</h3>
+                <p>Conexão sem fio 2.4 GHz, sensor óptico de 1000 DPI e autonomia de até 12 meses de pilha.</p>
+                <p>R$ 69,90</p>
+                <p><a href="#">Ver detalhes</a></p>
+            </div>
+
+            <hr>
+
+            <div>
+                <img src="img/teclado.jpg" alt="Teclado mecânico Redragon" width="220">
+                <h3>Teclado Mecânico Redragon Kumara</h3>
+                <p>Padrão ABNT2, switches mecânicos Outemu Blue e iluminação LED vermelha.</p>
+                <p>R$ 219,00</p>
+                <p><a href="#">Ver detalhes</a></p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Cadastrar produto</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="nome-prod">Nome do produto:</label><br>
+                    <input type="text" id="nome-prod" name="nome" placeholder="Ex: Monitor 24 Polegadas" required>
+                </p>
+                <p>
+                    <label for="preco">Preço (R$):</label><br>
+                    <input type="number" id="preco" name="preco" step="0.01" placeholder="Ex: 850.00" required>
+                </p>
+                <p>
+                    <label for="foto">Foto do produto (URL ou caminho):</label><br>
+                    <input type="text" id="foto" name="foto" placeholder="img/produto.jpg" required>
+                </p>
+                <p>
+                    <label for="descricao">Descrição do produto:</label><br>
+                    <textarea id="descricao" name="descricao" rows="4" cols="40" placeholder="Digite as especificações do produto"></textarea>
+                </p>
+                <p>
+                    <button type="submit">Cadastrar Novo Produto</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Minha loja</p>
+        <p>Aluno: Rafael Caetité</p>
     </footer>
 
 </body>
